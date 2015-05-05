@@ -57,6 +57,16 @@ func (node *Node) String() string {
 	return string(node.Bytes())
 }
 
+// Get node.up member
+func (node *Node) Up() *Node {
+	return node.up
+}
+
+// Get node.down member
+func (node *Node) Down() []*Node {
+	return node.down
+}
+
 // Bytes returns the string value of node as a byte slice.
 // See Node.String for a description of what the string value of a node is.
 func (node *Node) Bytes() []byte {
